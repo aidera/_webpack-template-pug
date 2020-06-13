@@ -29,7 +29,7 @@ const pages = fs.readdirSync(PATH.pages);
 
 function EntryObject(args){
     args.map((arg) => {
-        this[arg] = `${PATH.pages}/${arg}/${arg}.js`   // ./index/index.js, ./catalog/catalog.js
+        this[arg] = `${PATH.pages}/${arg}/${arg}.ts`   // ./index/index.ts, ./catalog/catalog.ts
     })
     // this.common = ['./assets/js/main.js', 'sdsdsd.sd', sddssd.fergwef'];
     this.common = ['@babel/polyfill'];
